@@ -6,7 +6,7 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 
-public class Player extends BorderPane {
+public class lecteur_de_vidéo extends BorderPane {
 	
 	Media enregistrement;
 	MediaPlayer lecteur;
@@ -14,7 +14,7 @@ public class Player extends BorderPane {
 	Pane espace;
 	VideoControls barre_de_lecture;
 	
-	public Player(String file) {
+	public lecteur_de_vidéo(String file) {
 		enregistrement = new Media(file);
 		lecteur = new MediaPlayer(enregistrement);
 		interface_utilisateur = new MediaView(lecteur);

@@ -17,7 +17,7 @@ public class Main extends Application {
 
 	FileChooser fileChooser;
 
-	Player player;
+	lecteur_de_vidéo player;
 
 	MenuBar menuBar;
 	Menu fileMenu;
@@ -45,7 +45,7 @@ public class Main extends Application {
 					if(player != null) {
 						player.player.dispose();
 					}
-					player = new Player(mediaFile.toURI().toURL().toExternalForm());
+					player = new lecteur_de_vidéo(mediaFile.toURI().toURL().toExternalForm());
 					player.view.setFitWidth(scene.getWidth());
 					root.setCenter(player);
 				} catch (MalformedURLException e1) {
